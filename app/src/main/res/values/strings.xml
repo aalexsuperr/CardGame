@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Стихийные Войны</string>
+    <string name="btn_start">Начать битву</string>
+    <string name="btn_play">Выложить</string>
+    <string name="btn_attack">Атаковать</string>
+    <string name="btn_end_turn">Конец хода</string>
+</resources>

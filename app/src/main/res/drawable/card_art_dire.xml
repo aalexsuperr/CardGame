@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Skull dome -->
+    <path android:fillColor="#CE93D8"
+        android:pathData="M14,62 Q14,10 48,10 Q82,10 82,62 L82,68 L14,68 Z"/>
+    <!-- Left eye socket (dark) -->
+    <path android:fillColor="#0D1117"
+        android:pathData="M22,54 L22,30 L44,30 L44,54 Z"/>
+    <!-- Right eye socket (dark) -->
+    <path android:fillColor="#0D1117"
+        android:pathData="M52,54 L52,30 L74,30 L74,54 Z"/>
+    <!-- Nose hole -->
+    <path android:fillColor="#0D1117"
+        android:pathData="M44,58 L48,65 L52,58 Z"/>
+    <!-- Jaw -->
+    <path android:fillColor="#B06AC4"
+        android:pathData="M18,68 L78,68 L78,84 L18,84 Z"/>
+    <!-- Teeth gaps (dark) -->
+    <path android:fillColor="#0D1117"
+        android:pathData="M22,76 L28,76 L28,86 L22,86 Z"/>
+    <path android:fillColor="#0D1117"
+        android:pathData="M36,76 L42,76 L42,86 L36,86 Z"/>
+    <path android:fillColor="#0D1117"
+        android:pathData="M50,76 L56,76 L56,86 L50,86 Z"/>
+    <path android:fillColor="#0D1117"
+        android:pathData="M64,76 L70,76 L70,86 L64,86 Z"/>
+</vector>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚔ СТИХИЙНЫЕ ВОЙНЫ ⚔"
+        android:textColor="@color/accent_gold"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔥 💧 🌿 💨 ☠"
+        android:textSize="28sp"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Имя Игрока 1"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/et_player1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Игрок 1"
+        android:textColorHint="@color/text_hint"
+        android:textColor="@color/text_primary"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/accent_gold"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Имя Игрока 2"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/et_player2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Игрок 2"
+        android:textColorHint="@color/text_hint"
+        android:textColor="@color/text_primary"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/accent_gold"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="⚔  НАЧАТЬ БИТВУ"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 карт • 5 стихий • 20 способностей"
+        android:textColor="@color/text_hint"
+        android:textSize="11sp"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

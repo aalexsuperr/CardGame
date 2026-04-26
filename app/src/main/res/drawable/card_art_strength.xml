@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Blade -->
+    <path android:fillColor="#FF6B35"
+        android:pathData="M44,6 L52,6 L52,58 L48,66 L44,58 Z"/>
+    <!-- Crossguard -->
+    <path android:fillColor="#FF9055"
+        android:pathData="M26,34 L70,34 L70,42 L26,42 Z"/>
+    <!-- Grip -->
+    <path android:fillColor="#CC4400"
+        android:pathData="M44,66 L52,66 L53,82 L48,87 L43,82 Z"/>
+    <!-- Pommel -->
+    <path android:fillColor="#FF6B35"
+        android:pathData="M40,82 L56,82 L56,90 L40,90 Z"/>
+</vector>

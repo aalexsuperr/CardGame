@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hand card: 88dp wide, full RecyclerView height -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_root"
+    android:layout_width="88dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:padding="4dp">
+
+    <!-- Top row: element icon + cost badge -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" />
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_cost_badge" />
+    </LinearLayout>
+
+    <!-- Card art: 2 parts of remaining space -->
+    <ImageView
+        android:id="@+id/iv_art"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp" />
+
+    <!-- Hero name -->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:textColor="#E6EDF3"
+        android:textSize="9sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <!-- Stats: ATK / DEF / HP -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_atk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFCC00"
+            android:textSize="8sp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_def"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#88CCFF"
+            android:textSize="8sp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_hp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FF7043"
+            android:textSize="8sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Ability text: 1 part of remaining space -->
+    <TextView
+        android:id="@+id/tv_ability"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#8B949E"
+        android:textSize="7sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+</LinearLayout>

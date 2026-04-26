@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Arrow body pointing up -->
+    <path android:fillColor="#29B6F6"
+        android:pathData="M48,6 L74,42 L60,42 L60,90 L36,90 L36,42 L22,42 Z"/>
+    <!-- Highlight on arrow -->
+    <path android:fillColor="#81D4FA"
+        android:pathData="M48,14 L62,38 L54,38 L54,48 L48,48 Z"/>
+</vector>

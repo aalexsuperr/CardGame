@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg_dark">#0D1117</color>
+    <color name="bg_medium">#161B22</color>
+    <color name="bg_field">#0D1321</color>
+    <color name="bg_field_label">#0A0F1A</color>
+    <color name="bg_hand">#111827</color>
+    <color name="bg_turn_bar">#1C2333</color>
+
+    <!-- Text -->
+    <color name="text_primary">#E6EDF3</color>
+    <color name="text_secondary">#8B949E</color>
+    <color name="text_hint">#484F58</color>
+
+    <!-- Game -->
+    <color name="hp_color">#3FB950</color>
+    <color name="accent_gold">#F1E05A</color>
+
+    <!-- Elements -->
+    <color name="color_fire">#FF6B35</color>
+    <color name="color_water">#29B6F6</color>
+    <color name="color_earth">#66BB6A</color>
+    <color name="color_air">#80DEEA</color>
+    <color name="color_chaos">#CE93D8</color>
+
+    <!-- Material theme required -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- 5-pointed star -->
+    <path android:fillColor="#9C7FD4"
+        android:pathData="M48,6 L57,32 L84,32 L63,50 L71,76 L48,60 L25,76 L33,50 L12,32 L39,32 Z"/>
+    <!-- Inner glow -->
+    <path android:fillColor="#C4AAEE"
+        android:pathData="M48,20 L53,36 L70,36 L57,46 L62,62 L48,53 L34,62 L39,46 L26,36 L43,36 Z"/>
+</vector>

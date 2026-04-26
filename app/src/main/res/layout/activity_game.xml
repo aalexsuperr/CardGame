@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <!-- ═══════════════ MAIN GAME LAYOUT ═══════════════ -->
+    <LinearLayout
+        android:id="@+id/game_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- OPPONENT INFO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_medium"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_opponent_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:text="Противник" />
+
+                <TextView
+                    android:id="@+id/tv_opponent_hp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hp_color"
+                    android:textSize="12sp"
+                    android:text="30/30 ❤" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_opponent_hp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:max="30"
+                android:progress="30" />
+
+            <TextView
+                android:id="@+id/tv_opponent_mana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:text="..." />
+        </LinearLayout>
+
+        <!-- OPPONENT FIELD LABEL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:gravity="center"
+            android:text="⚔ Поле противника ⚔"
+            android:textColor="@color/text_hint"
+            android:textSize="9sp"
+            android:background="@color/bg_field_label" />
+
+        <!-- OPPONENT FIELD -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_opponent_field"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/bg_field"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:clipToPadding="false" />
+
+        <!-- TURN BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/bg_turn_bar"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/tv_turn_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/accent_gold"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:text="Ход 1" />
+
+            <TextView
+                android:id="@+id/tv_deck_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_hint"
+                android:textSize="10sp"
+                android:text="Колода: 50" />
+        </LinearLayout>
+
+        <!-- PLAYER FIELD LABEL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:gravity="center"
+            android:text="🛡 Ваше поле 🛡"
+            android:textColor="@color/text_hint"
+            android:textSize="9sp"
+            android:background="@color/bg_field_label" />
+
+        <!-- PLAYER FIELD -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_player_field"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/bg_field"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:clipToPadding="false" />
+
+        <!-- PLAYER INFO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_medium"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_player_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:text="Игрок" />
+
+                <TextView
+                    android:id="@+id/tv_player_hp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hp_color"
+                    android:textSize="12sp"
+                    android:text="30/30 ❤" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_player_hp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:max="30"
+                android:progress="30" />
+
+            <TextView
+                android:id="@+id/tv_player_mana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:text="..." />
+        </LinearLayout>
+
+        <!-- HAND LABEL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:gravity="center"
+            android:text="🃏 Ваша рука (нажмите для выбора) 🃏"
+            android:textColor="@color/text_hint"
+            android:textSize="9sp"
+            android:background="@color/bg_field_label" />
+
+        <!-- PLAYER HAND -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_player_hand"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/bg_hand"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:clipToPadding="false" />
+
+        <!-- ACTION BUTTONS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_dark">
+
+            <Button
+                android:id="@+id/btn_play_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Выложить"
+                android:textSize="11sp"
+                android:layout_marginEnd="1dp" />
+
+            <Button
+                android:id="@+id/btn_attack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Атаковать"
+                android:textSize="11sp"
+                android:layout_marginEnd="1dp" />
+
+            <Button
+                android:id="@+id/btn_end_turn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Конец хода"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ═══════════════ HANDOFF OVERLAY ═══════════════ -->
+    <LinearLayout
+        android:id="@+id/handoff_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/bg_dark"
+        android:visibility="gone"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚔ СТИХИЙНЫЕ ВОЙНЫ ⚔"
+            android:textColor="@color/accent_gold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tv_handoff_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp"
+            android:text="Ход 1" />
+
+        <TextView
+            android:id="@+id/tv_handoff_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:lineSpacingMultiplier="1.4"
+            android:text="..." />
+
+        <Button
+            android:id="@+id/btn_handoff_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✅  Я готов, начать ход!"
+            android:textSize="14sp"
+            android:layout_marginTop="48dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Lightning bolt -->
+    <path android:fillColor="#F1E05A"
+        android:pathData="M60,4 L32,52 L52,52 L30,92 L78,40 L56,40 Z"/>
+    <!-- Bright core -->
+    <path android:fillColor="#FFF9C4"
+        android:pathData="M57,12 L42,48 L54,48 L40,78 L68,44 L56,44 Z"/>
+</vector>
